@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title> Neha Adhlakha </title>
@@ -7,6 +6,7 @@ body, html {
     cursor: url(https://www.shareicon.net/download/2016/01/19/705872_cursor_512x512.png), pointer;
 }
 body {
+	margin: 0;
     background-color: lightblue;
 }
 h1 {
@@ -14,6 +14,9 @@ h1 {
     color: white;
     text-align: center;
     font-size: 100px;
+    background: #6a6f77;
+    height: 200px;
+	padding-top: 50px;
 }
 #p01 {
 	font-family:impact;
@@ -31,12 +34,31 @@ table, th, td {
     font-family: Trebuchet MS;
  
 }
+.main-nav {
+  background: #fff;
+  height: 80px;
+  z-index: 150;
+  margin-bottom: -80px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+.main-nav,
+.main {
+  position: relative; 
+}
 </style>
 </head>
 <body>
 
 
 <h1>Hi, I am Neha.</h1>
+
+<nav class="main-nav">
+  <a href="#">Bio</a>
+  <a href="#">About Me</a>
+  <a href="#">Projects</a>
+  <a href="#">Gallery</a>
+</nav>
+<div class="main">
 
 <img src="http://i67.tinypic.com/hwy2p5.jpg9" alt="HTML5 Icon" style="margin:auto;width:400px;height:300px;display:block;">
 <p id="p01">This is me!</p>
@@ -101,7 +123,7 @@ table, th, td {
 
 <br>
 <hr>
-
+</div>
 
 </body>
 </html>
